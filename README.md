@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
+## Requirements
+
+Node.js version 8.x or 10.x,
+
+npm package manager,
+
+[Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
+
+After fullfill all requirements go to project folder and install all dependencies by
+
+`npm install`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
