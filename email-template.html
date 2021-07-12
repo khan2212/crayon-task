@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+  <style>
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      background: #f1f1f1;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+
+  <style>
+    .bg_blue {
+      border-radius: 15px 15px 0 0;
+      background: #001e62;
+      padding: 25px;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.8;
+      color: rgba(0, 0, 0, .4);
+    }
+
+    /*LOGO*/
+    .logo h1 {
+      margin: 0;
+      line-height: 20px;
+      word-spacing: 100vw;
+    }
+
+    .logo h1 a {
+      color: #fff;
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+    }
+
+    .logo h1 span {
+      display: block;
+      height: 2px;
+      background: #c8103e;
+      width: 15%;
+      margin-top: 10px;
+    }
+
+    .hero img {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+      cursor: pointer;
+    }
+
+    .hero h1 {
+      margin: 0;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      position: absolute;
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .email-g {
+        width: 100% !important;
+        display: block;
+      }
+
+      .email-b {
+        border-right: none !important;
+        padding: 0 0 10px 0 !important;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .email-c p {
+        min-height: auto !important;
+      }
+
+      .hero img {
+        height: 200px;
+      }
+    }
+
+    .email-container {
+      max-width: 800px;
+      margin: 15px auto 15px auto;
+      background: #fff;
+      border-radius: 15px;
+    }
+
+    .email-section {
+      padding: 0 15px 0 15px;
+      font-size: 16px;
+      color: #001e62;
+      text-align: justify;
+      line-height: 25px;
+    }
+
+    .email-section p {
+      margin: 10px 0 10px 0;
+    }
+
+    .email-section button {
+      background: #001e62;
+      color: #fff;
+      display: table;
+      margin: 0 auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      width: 200px;
+      position: relative;
+      top: 30px;
+      z-index: 9;
+      border-radius: 5px;
+    }
+
+    .email-a img {
+      width: 100%;
+      height: 100px;
+    }
+
+    .email-a section {
+      padding: 20px;
+      background: #dde8fc;
+    }
+
+    .email-b {
+      text-align: center;
+      border-right: 2px solid #ccc;
+      padding: 0 10px 0 10px;
+      height: 100%;
+    }
+
+    .email-b span {
+      font-size: 10px;
+      display: block;
+    }
+
+    .email-c p {
+      color: #001e62;
+      font-size: 14px;
+      line-height: 23px;
+      min-height: 130px;
+    }
+
+    .email-c h3 {
+      color: #001e62;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    .email-d {
+      color: #001e62;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: center;
+    }
+
+    .email-d button {
+      background: #001e62;
+      color: #fff;
+      display: table;
+      margin: 0 auto;
+      padding: 15px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      width: 200px;
+      position: relative;
+      top: 30px;
+      z-index: 9;
+      border-radius: 5px;
+    }
+
+    .email-e {
+      background: #001e62;
+      border-radius: 0 0 15px 15px;
+      padding: 15px;
+    }
+
+    .email-e h1 {
+      margin-bottom: 0;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .email-e p {
+      color: #fff;
+      font-size: 16px;
+      margin: 0 0 0 0;
+      line-height: 25px;
+    }
+
+    .email-e h2 {
+      margin: 15px 0 0 0;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .email-f {
+      border-bottom: 2px solid;
+      padding-bottom: 15px;
+      margin-bottom: 15px !important;
+    }
+
+    .email-g {
+      width: 33.333%;
+    }
+  </style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+  <center style="width: 100%; background-color: #f1f1f1;">
+
+    <div class="email-container">
+
+      <!-- BEGIN BODY -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="margin: auto;">
+        <tr>
+          <td class="bg_blue logo">
+            <h1><a href="#">London Business School</a><span></span></h1>
+          </td>
+        </tr><!-- end tr -->
+        <tr>
+          <td valign="middle" class="hero">
+            <h1>EXECUTIVE EDUCATION</h1>
+            <img src="C:\assignment\images\paris.jpg">
+          </td>
+        </tr><!-- end tr -->
+        <tr>
+          <td class="bg_white">
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+              <tr>
+                <td class="email-section">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book</p>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book</p>
+
+                  <button>Start Application</button>
+                </td>
+              </tr><!-- end: tr -->
+
+
+            </table>
+
+          </td>
+        </tr><!-- end:tr -->
+
+      </table>
+
+      <div class="email-a">
+        <img src="C:\assignment\images\shape.jpg" style="position: relative;
+        top: 9px;">
+        <section>
+          <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+            style="margin: auto;">
+            <tr>
+              <td class="email-d">
+                <p>If you solve customer problems, funding takes care of itself. Learn five
+                  proven models for startup success and a framework for analysing new
+                  opportunities</p>
+              </td>
+            </tr>
+            <tr>
+              <td valign="middle" class="email-c">
+                <table>
+                  <tr>
+                    <td valign="top" class="email-g">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td class="email-b">
+                            <h3>75%</h3>
+                            <p>The research says that more
+                              than three in four firms that
+                              attract VC investments don’t
+                              repay the capital that goes into
+                              them.</p>
+
+                            <span>SOURCE: LBS RESEARCH</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td valign="top" class="email-g">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td class="email-b">
+                            <h3>82%</h3>
+                            <p>According to a study by U.S.
+                              Bank, 82% of business
+                              failures are due to poor cash
+                              management.</p>
+
+                            <span>SOURCE: LBS RESEARCH</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td valign="top" class="email-g">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td class="email-b" style="border: none;">
+                            <h3>70%</h3>
+                            <p>According to the OECD,
+                              small to medium-sized
+                              enterprises typically
+                              contribute 50% or more to
+                              GDP and create 70% of new
+                              employment opportunities.</p>
+
+                            <span>SOURCE: LBS RESEARCH</span>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr><!-- end: tr -->
+
+            <tr>
+              <td class="email-d">
+                <p>If you solve customer problems, funding takes care of itself. Learn five
+                  proven models for startup success and a framework for analysing new
+                  opportunities</p>
+
+                <button>Start Application</button>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <img src="C:\assignment\images\shape-2.jpg">
+      </div>
+
+      <div class="email-e">
+        <table>
+          <tr>
+            <td>
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td>
+                    <h1>Need more information?</h1>
+                    <p class="email-f">A Programme Advisor will get in touch with you shortly. You can also reply
+                      to this email for any programme-related questions.</p>
+
+                    <p>London Business School (LBS) is collaborating with EMERITUS Institute of
+                      Management to deliver this online programme. EMERITUS handles the
+                      registration process and will answer any questions you have about the
+                      programme, and whether it’s right for you. More than 13,000 participants
+                      from 120+ countries have signed up for EMERITUS’ online programmes in
+                      the last year</p>
+
+                    <h2>Unsubscribe from this list</h2>
+                  </td>
+                </tr><!-- end: tr -->
+              </table>
+
+            </td>
+          </tr><!-- end:tr -->
+        </table>
+      </div>
+
+    </div>
+  </center>
+</body>
+
+</html>
